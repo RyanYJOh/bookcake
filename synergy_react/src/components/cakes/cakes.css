@@ -1,0 +1,9 @@
+.key-line:hover {
+    text-decoration: underline;
+}
+.visited-cake {
+    color : #e7b4ad;
+}
+[type="radio"] {
+    display: none;
+}

@@ -1,0 +1,38 @@
+#img-eachcake {
+    width: 60%;
+    height: auto;
+}
+#img-cover {
+    width: 80%;
+    height: auto;
+}
+#tmi-header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#tmi-toggle {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+#tmi-body {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#coupang-partners {
+    font-size: 11px;
+    font-style: italic;
+}
+@media (max-width: 768px) {
+    #img-eachcake {
+        width: 100%;
+        height: auto;
+    }
+    #coupang-partners {
+        font-size: 2.5vw;
+    }
+    #tmi-body {
+        /* font-size : 3vw; */
+        font-size : 3.5vw;
+    }
+}

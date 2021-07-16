@@ -1,0 +1,32 @@
+.img-rcmndList, .img-EachRcmnd {
+    width: 80%;
+    height: auto;
+}
+
+@media (max-width:768px) {
+    #mobile-pc{display:none;}
+    #mobile{width:100%;}
+    #pc{display: none;}
+
+    .img-rcmndList {
+        width: 100%;
+        height: auto
+    }
+    .img-EachRcmnd {
+        width: 70%;
+        height: auto
+    }
+    .rcmndList {
+        border-bottom: 1px solid #9A161F;
+    }
+    .rcmndList-row { /* RcmndList에서 [책소개] 부분에서 width가 100%면 자꾸 왼쪽으로 쏠린다. Strange.*/
+        width: 110% !important;
+    }
+}  
+
+/* PC */ 
+@media (min-width:1025px) {
+    #mobile-pc{display:none;}
+    #mobile{display: none;}
+    #pc{width:100%;}
+  }
