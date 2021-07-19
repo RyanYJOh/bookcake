@@ -119,7 +119,7 @@ class Cakes extends Component {
     
     // Cake_list API 가져오기
     _callApiCategories = () => {
-        return fetch("https://bookcake.shop/api/categories/")
+        return fetch("https://bookcake.herokuapp.com/api/categories/")
         .then((response) => response.json())
         .catch((err) => console.log(err))
     }
