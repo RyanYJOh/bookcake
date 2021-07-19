@@ -47,7 +47,7 @@ class Cake extends Component {
     
     // API 가져온 뒤 setState
     _callApiEachCake = () => {
-        return fetch(`https://bookcake.shop/api/cake/${this.props.match.params.id}`)
+        return fetch(`https://bookcake.herokuapp.com/api/cake/${this.props.match.params.id}`)
         .then((response) => response.json())
     // 만약 이 json 오브젝트 내에 또 다른 오브젝트가 있어서 거기에 access 하려면 json.data.cake 이런 식으로 명시해줘야 함.
     // 하지만 이 경우에는 그렇지 않기 때문에 json만 써주면 되고, 그럼 굳이 아래처럼 .then을 쓸 필요가 없는듯..

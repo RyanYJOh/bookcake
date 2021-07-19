@@ -44,8 +44,7 @@ class Recommendations extends Component {
     }
 
     _callApiRcmndList = () => {
-        return fetch("https://bookcake.shop/api/you-may-like-these/")
-        // return fetch("http://127.0.0.1:8000/api/you-may-like-these/")
+        return fetch("https://bookcake.herokuapp.com/api/you-may-like-these/")
         .then((response) => response.json())
         .catch((err) => console.log(err))
     }

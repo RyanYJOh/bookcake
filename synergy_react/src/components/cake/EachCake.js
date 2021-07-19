@@ -29,8 +29,7 @@ class EachCake extends Component {
     // Books API 가져오기
     _callApiBooks = () => {
         const this_book_id = this.props.book_id
-        return fetch(`https://bookcake.shop/api/book/${this_book_id}`)
-        // return fetch(`http://127.0.0.1:8000/api/book/${this_book_id}`)
+        return fetch(`https://bookcake.herokuapp.com/api/book/${this_book_id}`)
         .then((response) => response.json())
         .catch((err) => console.log(err))
     }

@@ -26,8 +26,7 @@ class EachRcmnd extends Component {
 
     _callApiRcmndedBook = () => {
         const this_book_title = this.props.title
-        return fetch(`https://bookcake.shop/api/you-may-like/${this_book_title}`)
-        // return fetch(`http://127.0.0.1:8000/api/you-may-like/${this_book_title}`)
+        return fetch(`https://bookcake.herokuapp.com/api/you-may-like/${this_book_title}`)
         .then((response) => response.json())
         .catch((err) => console.log(err))
     }
@@ -40,8 +39,7 @@ class EachRcmnd extends Component {
     }
 
     _callApiThickness = () => {
-        return fetch("https://bookcake.shop/api/thickness/")
-        // return fetch("http://127.0.0.1:8000/api/thickness/")
+        return fetch("https://bookcake.herokuapp.com/api/thickness/")
         .then((response) => response.json())
         .catch((err) => console.log(err))
     }

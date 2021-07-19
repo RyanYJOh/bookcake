@@ -37,8 +37,7 @@ class Rcmnd extends Component {
     }
 
     _callApiEachRcmnd = () => {
-        return fetch(`https://bookcake.shop/api/you-may-like/${this.props.match.params.title}`)
-        // return fetch(`http://127.0.0.1:8000/api/you-may-like/${this.props.match.params.title}`)
+        return fetch(`https://bookcake.herokuapp.com/api/you-may-like/${this.props.match.params.title}`)
         .then((response) => response.json())
         .then(data => {
             this.setState({rcmnd_object : data})

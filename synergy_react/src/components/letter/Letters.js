@@ -30,8 +30,7 @@ class Letters extends Component {
     }
 
     _callApiLetter = () => {
-        return fetch('https://bookcake.shop/api/inside-my-head/')
-        // return fetch('http://127.0.0.1:8000/api/inside-my-head/')
+        return fetch('https://bookcake.herokuapp.com/api/inside-my-head/')
         .then((response) => response.json())
         .then(data => {
             this.setState(
