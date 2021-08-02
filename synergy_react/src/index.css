@@ -80,7 +80,7 @@ code {
   border-radius: 0px;
 }
 .btn-sub-cta:hover, .btn-sub-cta:active, .btn-sub-cta:focus {
-  border: 2px solid #169a8f !important;
+  border: 2px solid #e5f5f3 !important;
   background-color: #169a8f !important;
   color: #F4EFEA;
 }

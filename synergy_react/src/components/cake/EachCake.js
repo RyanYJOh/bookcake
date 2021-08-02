@@ -73,7 +73,7 @@ class EachCake extends Component {
                                     <Card.Header className="text-center" id="tmi-header">
                                         <Row className="my-auto">
                                             <Col lg={12} xs={12} className="my-auto text-center text-medium" id="tmi-header-text">
-                                            <span className="bold">✍ [Too Much Information]</span>
+                                            <span className="bold">✍</span>
                                             </Col>
                                         </Row>
                                         
